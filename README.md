@@ -12,9 +12,11 @@ Two **node** microcontrollers each track a limb with 4 IMUs and broadcast their 
 
 ## Hardware
 
-- **3× ESP32-S3** dev boards (2 nodes + 1 main)
-- **ICM-20948** 9-DoF IMUs, addressed through a **TCA9548A** I2C multiplexer (nodes: 4 IMUs, main: 2)
-- I2C mux at `0x70`, IMUs at `0x69` (fall back to `0x68`)
+- **3× ESP32-S3 Feather** boards (2 nodes + 1 main)
+- **10× ICM-20948** 9-DoF IMUs, addressed through a **TCA9548A** I2C multiplexer (nodes: 4 IMUs, main: 2)
+- I2C mux at `0x70`, IMUs at `0x69` (fall back to `0x68`); each MC powered by its own 3.7V LiPo
+
+See **[docs/hardware.md](docs/hardware.md)** for the full bill of materials, wiring tables, pinout, and calibration steps.
 
 ## Repository layout
 
