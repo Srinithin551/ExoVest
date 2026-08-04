@@ -66,9 +66,8 @@ Per the ICM-20948 setup:
 
 Do this once per IMU before relying on orientation output.
 
-## Diagrams
+## Diagram
 
-Circuit Canvas exports (add the PNGs to `docs/img/`):
+![Node wiring: ESP32-S3 to TCA9548A to 4x ICM-20948](img/node-wiring.svg)
 
-- `docs/img/node-wiring.png` — breadboard layout for one node (ESP32-S3 → TCA9548A → 4× ICM-20948)
-- `docs/img/schematic.png` — full-system schematic (all 3 MCs)
+Every ICM-20948 shares I2C address `0x69`, so each one gets its own multiplexer channel. The main MC uses the same wiring with only channels 0–1 populated (2 IMUs).
