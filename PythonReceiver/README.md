@@ -32,7 +32,11 @@ cd ExoVest/PythonReceiver     # adjust to wherever the repo lands
 
 ### 2. Create the virtual environment
 ```bash
+# macOS / Linux
 python3 -m venv .venv
+
+# Windows (use the py launcher if `python` isn't found)
+python -m venv .venv
 ```
 This makes a local, disposable `.venv/` folder — an isolated Python just for this project.
 You can delete it anytime and recreate it; nothing important lives only inside it.
