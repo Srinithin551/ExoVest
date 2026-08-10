@@ -1,0 +1,14 @@
+# Virtual environment (recreate with: python3 -m venv .venv && pip install -r requirements.txt)
+.venv/
+
+# Python caches
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Recorded packet captures (Phase 4)
+*.ndjson
+*.csv
+
+# macOS
+.DS_Store
