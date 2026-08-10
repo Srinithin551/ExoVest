@@ -1,12 +1,12 @@
-async-timeout==5.0.1
+# ExoVest Python receiver — direct dependencies only.
+# Cross-platform: bleak pulls the right Bluetooth backend per OS automatically
+# (pyobjc on macOS, winrt on Windows, dbus/BlueZ on Linux) — do NOT list those
+# here, or the install breaks on other operating systems.
+#
+# Recommended Python: 3.10-3.12 (3.9 also works). Install into a venv:
+#   python -m venv .venv && <activate> && pip install -r requirements.txt
+
 bleak==1.1.1
 numpy==2.0.2
-pyobjc-core==11.1
-pyobjc-framework-Cocoa==11.1
-pyobjc-framework-CoreBluetooth==11.1
-pyobjc-framework-libdispatch==11.1
-PyQt6==6.10.2
-PyQt6-Qt6==6.10.2
-PyQt6_sip==13.10.2
 pyqtgraph==0.13.7
-typing_extensions==4.16.0
+PyQt6==6.10.2
